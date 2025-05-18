@@ -38,7 +38,7 @@ function App() {
       setIsLoading(true);
       try {
         const res = await fetch(
-          `/api/ideas?page[number]=${page}&page[size]=${size}&append[]=small_image&append[]=medium_image&sort=${sort}`,
+          `https://suitmedia-backend.suitdev.com/api/ideas?page[number]=${page}&page[size]=${size}&append[]=small_image&append[]=medium_image&sort=${sort}`,
           {
             headers: {
               Accept: 'application/json',
